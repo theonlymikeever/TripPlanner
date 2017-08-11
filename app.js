@@ -11,24 +11,24 @@ app.engine('html', swig.renderFile);
 app.use('/public', express.static(path.join(__dirname, 'public')));
 
 
-app.get('/', (req, res, next)=> {
+app.get('/', (req, res, next) => {
   res.render('index');
 });
 
-app.use((req, res, next)=> {
+app.use((req, res, next) => {
   const error = new Error('page not found');
   error.status = 404;
   next(error);
 });
 
-app.use((err, req, res, next)=> {
+app.use((err, req, res, next) => {
   res.status(err.status || 500).render('error', { error: err });
 });
 
 const port = process.env.PORT || 3000;
 models.sync()
-  .then(()=> {
-    app.listen(port, ()=> {
+  .then(() => {
+    app.listen(port, () => {
       console.log(`listening on port ${port}`);
     });
   });
