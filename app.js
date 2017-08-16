@@ -14,6 +14,7 @@ app.engine('html', nunjucks.render);
 app.use(bodyParser.urlencoded({
   extended: false
 }));
+app.use(bodyParser.json());
 
 //middlware
 app.use('/public', express.static(path.join(__dirname, 'public')));
