@@ -1,6 +1,35 @@
-{% extends './layout.html' %}
+{% extends 'layout.html' %}
+
+{% block title %}Your Trip{% endblock %}
+
 {% block content %}
+<div id="app" class="clearfix">
+  <h1>Hello, I am the app!</h1>
+  <div>
+  <p>Hotels</p>
+    <select>
+    {% for hotel in hotels %}
+        <option>{{ hotel.name }}</option>
+    {% endfor %}
+    </select>
+</div>
 <div>
-  Stuff goes here..
+  <p>Restaurants</p>
+    <select>
+    {% for restaurant in restaurants %}
+        <option>{{ restaurant.name }}</option>
+    {% endfor %}
+    </select>
+</div>
+<div>
+  <p>Activities</p>
+    <select>
+    {% for activity in activities %}
+        <option>{{ activity.name }}</option>
+    {% endfor %}
+    </select>
+</div>
 </div>
 {% endblock %}
+
+

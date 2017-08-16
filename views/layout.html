@@ -1,11 +1,18 @@
+<!DOCTYPE html>
 <html>
+  <title>Trip Planner - {% block title %}{% endblock %}</title>
   <head>
-    <title>Tripplanner Static UI!</title>
-    <link rel='stylesheet' href='/public/stylesheets/styles.css' />
+    <!-- Stylesheets go here! -->
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/public/stylesheets/styles.css" rel="stylesheet">
   </head>
   <body>
-    <h1>Tripplanner Static UI</h1>
+
     {% block content %}
     {% endblock %}
+
+    <!-- Script tags go here! -->
+<script type="text/javascript" src="/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="/bootstrap/js/bootstrap.min.js"></script>
   </body>
 </html>

@@ -23,5 +23,12 @@ Place.hasMany(Restaurant);
 //   return require('./seed')
 // }
 
-module.exports = db;
+// module.exports = db;
+module.exports = {
+  db,
+  Activity,
+  Hotel,
+  Place,
+  Restaurant
+};
 
