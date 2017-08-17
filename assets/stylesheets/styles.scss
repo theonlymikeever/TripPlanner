@@ -1,10 +1,15 @@
+$main-color: #F8B195;
+$second-color: #F67280;
+$third-color: #C06C84;
+$fourth-color: #6C5B7B;
+$fifth-color: #355C7D;
+
 /* for material icons */
 .material-icons {
   font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;
-  font-size: 24px;
-  /* Preferred icon size */
+  font-size: 24px;  /* Preferred icon size */
   display: inline-block;
   line-height: 1;
   text-transform: none;
@@ -12,41 +17,47 @@
   word-wrap: normal;
   white-space: nowrap;
   direction: ltr;
+
   /* Support for all WebKit browsers. */
   -webkit-font-smoothing: antialiased;
   /* Support for Safari and Chrome. */
   text-rendering: optimizeLegibility;
+
   /* Support for Firefox. */
   -moz-osx-font-smoothing: grayscale;
+
   /* Support for IE. */
   font-feature-settings: 'liga';
-  position: relative; }
 
-.material-icons.md-48 {
-  font-size: 48px; }
+  position: relative;
+}
+.material-icons.md-48 { font-size: 48px; }
 
 #brand-logo, #brand-name {
   pointer-events: none;
-  color: #F67280; }
-
+  color: $second-color;
+}
 #brand-name {
   padding: 10px 10px;
-  font-size: 20px; }
+  font-size: 20px;
+}
 
 body {
-  background-color: #355C7D; }
+  background-color: $fifth-color;
+}
 
 /*.navbar-inverse .navbar-nav > li > a, .navbar-inverse .navbar-brand {
   color: $fifth-color;
 }*/
 .map-block {
   background-color: grey;
-  height: 600px; }
-
+  height: 600px;
+}
 .options-block {
-  background-color: #F8B195;
-  height: 300px; }
-
+  background-color: $main-color;
+  height: 300px;
+}
 .intinerary-block {
-  background-color: #C06C84;
-  height: 300px; }
+  background-color: $third-color;
+  height: 300px;
+}
