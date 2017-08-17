@@ -25,6 +25,7 @@
 .material-icons.md-48 {
   font-size: 48px; }
 
+/* Navbar Styles */
 #brand-logo, #brand-name {
   pointer-events: none;
   color: #F67280; }
@@ -33,8 +34,12 @@
   padding: 10px 10px;
   font-size: 20px; }
 
+.navbar {
+  margin-bottom: 0; }
+
+/* Body styles */
 body {
-  background-color: #355C7D; }
+  background-color: #6C5B7B; }
 
 /*.navbar-inverse .navbar-nav > li > a, .navbar-inverse .navbar-brand {
   color: $fifth-color;
@@ -46,7 +51,11 @@ body {
 .options-block {
   background-color: #F8B195;
   height: 300px; }
+  .options-block h3 {
+    color: #355C7D; }
 
 .intinerary-block {
-  background-color: #C06C84;
+  background-color: #355C7D;
   height: 300px; }
+  .intinerary-block h3 {
+    color: white; }

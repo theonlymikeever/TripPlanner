@@ -29,20 +29,19 @@
     <div class="container-fluid">
       <div class="row">
         <!-- Map -->
-        <div class="col-xs-12 col-sm-8 map-block">
-          [MAP]
+        <div id="map-canvas" class="col-xs-12 col-sm-8 map-block">
+          <!-- <div id="map-canvas"></div> -->
         </div>
         <div class="col-xs-12 col-sm-4">
           <div class="row">
             <!-- Options Panel -->
             <div class="col-xs-12 col-sm-12 options-block">
-              [Options]
               {% block content %}
               {% endblock %}
             </div>
             <!-- Intinerary -->
             <div class="col-xs-12 col-sm-12 intinerary-block">
-              [MAP]
+              <h3>Intinerary</h3>
             </div>
           </div>
         </div>
@@ -54,5 +53,6 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAglM8Du0owrHbA4kD_PMq7Bxmzpff-738&sensor=true"></script>
 <script type="text/javascript" src="/jquery/jquery.min.js"></script>
 <script type="text/javascript" src="/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/public/js/googleMap.js"></script>
   </body>
 </html>
