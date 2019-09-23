@@ -15,12 +15,12 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.17.2",
-    "bootstrap": "^3.3.7",
+    "bootstrap": "^3.4.1",
     "express": "^4.15.4",
     "jquery": "^3.4.0",
-    "morgan": "^1.8.2",
+    "morgan": "^1.9.1",
     "nunjucks": "^3.0.1",
-    "pg": "^7.1.0",
+    "pg": "^7.1.2",
     "pg-hstore": "^2.3.2",
     "sequelize": "^4.4.2",
     "swig": "^1.4.2"
